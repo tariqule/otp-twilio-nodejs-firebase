@@ -19,9 +19,9 @@ module.exports = function(req, res) {
       //Twilio does not support promis so we will use call back functions
       twilio.messages.create(
         {
-          body: `Your MyBee verification code is ${code}.`,
+          body: `You verification code is ${code}.`,
           to: phone,
-          from: "+16476976704"
+          from: {ENTER_YOUR_PHONE
         },
         err => {
           if (err) {
